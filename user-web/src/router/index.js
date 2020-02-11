@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import First from '@/views/First'
 import Second from '@/views/Second'
 import Login from '@/views/login/Login'
+
 Vue.use(Router)
 
 export default new Router({
