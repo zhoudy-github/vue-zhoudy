@@ -1,4 +1,4 @@
-<!--<template>
+<template>
    <div class='first'>
        {{msg}}
        <Confirm text='注册' @message='getMessage'></Confirm>
@@ -25,9 +25,9 @@ export default {
     }
 }
 </script>
-<style lang='less' scope>
+<style>
     .first {
         color: blue;
         font-size: 30px;
     }
-</style>-->
+</style>

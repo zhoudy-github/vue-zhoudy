@@ -87,9 +87,12 @@ export default {
                     ).then(
                         res => {
                             const rstData = res.data;
-                            rstData.msg != '密码不正确'?
-                                this.$message({message:rstData.msg,type: 'success'})
-                                :this.$message.error(rstData.msg);
+                            if(rstData.msg != '密码不正确'){
+                                this.$message({message:rstData.msg,type: 'success'});
+                                this.$router.push({path:"/second"});
+                            }else{
+                                this.$message.error(rstData.msg);  
+                            }
                         }
                     ).catch(
                         res => {
